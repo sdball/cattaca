@@ -8,7 +8,7 @@ FILE (optional): the file to use as a source, if not given then `cattaca` will r
 
 `-n`: the number of lines to output (defaults to 10)
 
-## Examples
+## Usage Examples
 
 ```
 # output seven random letters from "c" "a" "t"
@@ -36,4 +36,26 @@ checksum = "528131438037fd55894f62d6e9f068b8f45ac57ffa77517819645d10aed04f64"
 checksum = "cf4b9d6a944f767f8e5e0db018570623c85f3d925ac718db4e06d0187adb21c1"
 checksum = "bec47e5bfd1bff0eeaf6d8b485cc1074891a197ab4225d504cb7a1ab88b02bf0"
 checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
+```
+
+## Installation (macOS)
+
+### Straight from the tap
+
+```
+brew install sdball/tap/cattaca
+```
+
+### Setup tap for future use
+
+First setup my homebrew tap
+
+```
+brew tap sdball/tap
+```
+
+Then install `cattaca`
+
+```
+brew install cattaca
 ```
