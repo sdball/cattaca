@@ -1,27 +1,18 @@
 # cattaca
 
-Output a given number of random lines from a file or STDIN
+`cattaca` reads from a specified file or STDIN and outputs a specified number of random lines from the input. `cattaca` will always output the requested number of lines.
 
-`cattaca` will always output the requested number of lines and each line will be randomly selected from the given contents.
+## Arguments
 
-e.g.
+FILE (optional): the file to use as a source, if not given then `cattaca` will read from STDIN
 
-```
-$ echo "1\n2\n3" | cattaca -n 10
-1
-2
-3
-2
-2
-3
-1
-1
-2
-2
-```
+`-n`: the number of lines to output (defaults to 10)
+
+## Examples
 
 ```
-❯ echo "c\na\nt" | ./target/debug/cattaca -n 7
+# output seven random letters from "c" "a" "t"
+$ echo "c\na\nt" | cattaca -n 7
 c
 a
 t
@@ -29,21 +20,11 @@ t
 a
 c
 a
-```
 
-## Usage
-
-### Using a file
-
-```
 # output 1000 random lines pulled from datafile.txt
 $ cattaca datafile.txt -n 1000
-```
 
-### Using STDIN
-
-```
-# output 1000 random lines from STDIN
+# output 10 random lines from STDIN
 $ rg checksum Cargo.lock | ./target/debug/cattaca -n 10
 checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
 checksum = "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
