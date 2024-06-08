@@ -25,7 +25,7 @@ a
 $ cattaca datafile.txt -n 1000
 
 # output 10 random lines from STDIN
-$ rg checksum Cargo.lock | ./target/debug/cattaca -n 10
+$ rg checksum Cargo.lock | cattaca -n 10
 checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
 checksum = "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
 checksum = "97b3888a4aecf77e811145cadf6eef5901f4782c53886191b2f693f24761847c"
